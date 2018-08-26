@@ -8,5 +8,11 @@
   text-rendering: auto; // optimizelegibility throws things off #1094
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
+.#{$pi-css-prefix} {
+  speak: none;
+  text-transform: none;
+  line-height: 1;
+  @extend .#{$fa-css-prefix}
 }

@@ -1,14 +1,23 @@
 {
   "name": "fapi-icons",
-  "description": "The iconic font and CSS framework",
-  "version": "4.7.0",
+  "description": "Adaptation Font Awesome 4.7 under PRIME icons",
+  "version": "4.7.1",
+  "scripts": {
+    "sass": "npm run sass:build && npm run sass:compressed",
+    "sass:build": "node-sass --source-map true -o css/ scss/font-awesome.scss",
+    "sass:compressed": "node-sass --output-style compressed scss/font-awesome.scss css/font-awesome.min.css"
+  },
   "style": "css/font-awesome.css",
   "keywords": [
     "font",
     "awesome",
     "fontawesome",
     "icon",
-    "bootstrap"
+    "bootstrap",
+    "prime",
+    "primeng",
+    "faicons",
+    "primefaces"
   ],
   "homepage": "http://fontawesome.io/",
   "bugs": {
@@ -23,5 +32,8 @@
   },
   "engines": {
     "node": ">=0.10.3"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3"
   }
 }
