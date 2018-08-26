@@ -4,10 +4,10 @@
   "version": "4.7.1",
   "scripts": {
     "sass": "npm run sass:build && npm run sass:compressed",
-    "sass:build": "node-sass --source-map true -o css/ scss/font-awesome.scss",
-    "sass:compressed": "node-sass --output-style compressed scss/font-awesome.scss css/font-awesome.min.css"
+    "sass:build": "node-sass --source-map true -o css/ scss/fapi-icons.scss",
+    "sass:compressed": "node-sass --output-style compressed scss/fapi-icons.scss css/fapi-icons.min.css"
   },
-  "style": "css/font-awesome.css",
+  "style": "css/fapi-icons.css",
   "keywords": [
     "font",
     "awesome",
